@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#332C4E"
+    android:orientation="vertical"
+   >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/activity_horizontal_margin"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/tv_gtupaper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="GTU PAPER"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="#F7FFFA"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:typeface="serif" />
+
+            <EditText
+                android:id="@+id/input_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_gtupaper"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Username"
+                android:inputType="textPersonName"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:textColor="#51A7DE"
+                android:textColorHint="#737292" />
+
+            <EditText
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/input_name"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Email"
+                android:inputType="textEmailAddress"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:textColor="#51A7DE"
+                android:textColorHint="#737292" />
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/input_email"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:textColor="#51A7DE"
+                android:textColorHint="#737292" />
+
+            <EditText
+                android:id="@+id/input_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/input_password"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Confirm Password"
+                android:inputType="textPassword"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:textColor="#51A7DE"
+                android:textColorHint="#737292" />
+
+            <EditText
+                android:id="@+id/input_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/input_confirm"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/edittext_background"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Enter Mobile Number"
+                android:inputType="number"
+                android:paddingBottom="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:textColor="#51A7DE"
+                android:textColorHint="#737292" />
+
+            <Button
+                android:id="@+id/btn_enter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/input_mobile"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="#37B578"
+                android:padding="4dp"
+                android:text="Sign up"
+                android:textColor="#F7FFFA"
+                android:textSize="18sp"
+                android:typeface="normal" />
+
+
+            <TextView
+                android:id="@+id/tv_singin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/btn_enter"
+                android:layout_gravity="end"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Back to SignIn"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F7FFFA"
+                android:typeface="monospace" />
+
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
